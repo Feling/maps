@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Tiv Taam",
+    "branches": [
+      {
+        "city": "Tel Aviv",
+        "lat": 32.080178,
+        "lng": 34.781371
+      },
+      {
+        "lat": 32.090853,
+        "lng": 34.782976,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 32.085241,
+        "lng": 34.772648,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 32.090632,
+        "lng": 34.773936,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 32.0742043,
+        "lng": 34.77929059999997,
+        "city": "Tel Aviv"
+      }
+    ]
+  },
+  {
+    "name": "AmPm",
+    "branches": [
+      {
+        "city": "Tel Aviv",
+        "lat": 32.0726565,
+        "lng": 34.78200670000001
+      },
+      {
+        "lat": 32.0849352,
+        "lng": 34.78153759999998,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 32.0637223,
+        "lng": 34.7696201,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 32.0760792,
+        "lng": 34.76821589999997,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 32.1120161,
+        "lng": 34.79251870000007,
+        "city": "Tel Aviv"
+      }
+    ]
+  },
+  {
+    "name": "Victory",
+    "branches": [
+      {
+        "city": "Bnei Brak",
+        "lat": 32.094133,
+        "lng": 34.823432
+      },
+      {
+        "lat": 32.088627,
+        "lng": 34.775474,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 32.066566,
+        "lng": 34.782053,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 32.054963,
+        "lng": 34.767093,
+        "city": "Tel Aviv"
+      },
+      {
+        "lat": 31.970550,
+        "lng": 34.812237,
+        "city": "Rishon Letzion"
+      }
+    ]
+  },
+  {
+    "name": "Rami Levi",
+    "branches": [
+      {
+        "city": "bat Yam",
+        "lat": 32.005630,
+        "lng": 34.747800
+      },
+      {
+        "lat": 32.819117,
+        "lng": 35.054060,
+        "city": "Haifa"
+      },
+      {
+        "lat": 31.244365,
+        "lng": 34.811513,
+        "city": "Beer Sheva"
+      },
+      {
+        "lat": 32.101661,
+        "lng": 34.829882,
+        "city": "Ramat Gan"
+      }
+    ]
+  }
+]
