@@ -9,10 +9,12 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import 'hammerjs';
 import {MdInputModule} from "@angular/material";
 import {MapsService} from "./maps.service";
+import { SnifListComponent } from './snif-list/snif-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SnifListComponent
   ],
   imports: [
     BrowserModule,

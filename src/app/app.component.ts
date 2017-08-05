@@ -28,6 +28,8 @@ export class AppComponent implements OnInit {
   public latCenterOnInitMap = 32.02379;
   public lngCenterOnInitMap = 34.75185;
   public jsonLog;
+  public arrayOfSnifs = [];
+  gotData: boolean = false;
 
   constructor(private mapsService: MapsService) {
 
@@ -39,7 +41,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // Test for Json
     this.jsonLog = this.mapsService.getFromJson();
-    console.log(this.jsonLog);
+   // console.log(this.jsonLog);
 
     // Init
     this.initMap();
@@ -85,7 +87,39 @@ export class AppComponent implements OnInit {
       position: place.geometry.location,
       map: this.map
     });
+    console.log(this.jsonLog);
+    this.addMarkersToMapFromArray();
+  }
+
+  addMarkerFromJson(markerFromJson) {
+
+    const latlng = new google.maps.LatLng(markerFromJson, markerFromJson);
+
+    this.marker = new google.maps.Marker({
+      position: markerFromJson
+    });
   }
 
   //TODO add marker without autocomplete
+    addMarkersToMapFromArray() {
+
+      //this.jsonLog = this.mapsService.getFromJson();
+      this.jsonLog.forEach((item) => {
+        item.branches.forEach((snif) => {
+          snif.name = item.name;
+          const latlng = new google.maps.LatLng(snif.lat, snif.lng);
+          this.marker = new google.maps.Marker({
+            position: latlng,
+            map: this.map,
+            label: item.name
+          });
+       //   console.log(snif);
+          this.arrayOfSnifs.push(snif);
+        });
+      });
+      // Test
+
+    console.log(this.arrayOfSnifs.length);
+    console.log(this.gotData);
+    }
 }
